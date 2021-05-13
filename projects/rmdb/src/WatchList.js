@@ -1,18 +1,8 @@
-import db from './db.json'
+import {MovieList} from "./MovieList"
 
-const movies = db.movies
-
-export const WatchList = () => {
-    const watchlistMovies = [movies[1], movies[2], movies[4]]
-    
-    return (
-        <section>
-            <h3>Movies to watch:</h3>
-            <ul>
-                <li>{watchlistMovies[0].Title}</li>
-                <li>{watchlistMovies[1].Title}</li>
-                <li>{watchlistMovies[2].Title}</li>
-            </ul>
-        </section>
-    )
-}
+export const WatchList = ({watchlistMovies}) => (
+    <section>
+        <h3>Movies to watch:</h3>
+        <MovieList movies={watchlistMovies}/>
+    </section>
+)
