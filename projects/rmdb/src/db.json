@@ -8,7 +8,7 @@
   ],
   "movies": [
     {
-      "Title": "WandaVision",
+      "Title": "Wanda Vision",
       "Year": "2021",
       "imdbID": "tt9140560",
       "Type": "series",
@@ -16,7 +16,7 @@
       "imdbRating": "8.1"
     },
     {
-      "Title": "Soul",
+      "Title": "Soul 2",
       "Year": "2020",
       "imdbID": "tt2948372",
       "Type": "movie",

@@ -1,8 +1,14 @@
-import {MovieList} from "./MovieList"
+import {MovieListSelection} from "./MovieListSelection"
 
-export const AllMovies = ({allMovies}) => (
-    <section>
-        <h3>All movies:</h3>
-        <MovieList movies={allMovies}/>
-    </section>
+export const AllMovies = ({allMovies, onAddToWatchlist, onEdit}) => (
+    <MovieListSelection 
+        movies={allMovies} 
+        title="All Movies" 
+        subtitle="Discover something new."
+        displayFilter={true} 
+        onAddToWatchlist={onAddToWatchlist}
+        displayAddButton={true}
+        onEdit={onEdit}
+        displayEditButton={true}
+        />
 )
